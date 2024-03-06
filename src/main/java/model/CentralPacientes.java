@@ -1,4 +1,5 @@
 package model;
+import collections.*;
 
 import java.util.Date;
 
@@ -11,6 +12,8 @@ public class CentralPacientes {
     public CentralPacientes() {
         this.numPacientes = 0;
     }
+
+
 
     public boolean agregarPaciente(Paciente nuevoPaciente, int searchValue){
 
