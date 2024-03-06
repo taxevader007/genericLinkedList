@@ -6,13 +6,9 @@ import java.util.Date;
 public class CentralPacientes {
     public LinkList<Paciente> collections = new LinkList<Paciente>();
 
-    public int numPacientes;
-    public Paciente primero;
-
-    public Paciente ultimo;
-
+    
     public CentralPacientes() {
-        this.numPacientes = 0;
+        
     }
 
 
@@ -26,13 +22,13 @@ public class CentralPacientes {
     }
 
 
-    public Paciente searchPaciente(){
-        collections.contains(primero);
+    public Paciente searchPaciente(Paciente paciente){
+        collections.contains(paciente);
         return null;
     }
 
-    public boolean deletePaciente(int codigo){
-        collections.delete(primero);
+    public boolean deletePaciente(Paciente paciente){
+        collections.delete(paciente);
         return false;
     }
 
