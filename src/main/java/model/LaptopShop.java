@@ -3,14 +3,26 @@ package model;
 import collections.*;
 
 public class LaptopShop {
-    public int contadorLaptops;
-    
-    public Laptop first;
-
-    public Laptop last;
+    public LinkList<Laptop> collections = new LinkList<Laptop>();
 
     public LaptopShop() {
-        this.contadorLaptops = 0;
+        
+    }
+
+    public boolean addLaptop(Laptop laptop){
+        collections.add(laptop);
+
+        return false;
+    }
+
+    public Laptop searchLaptop(Laptop laptop){
+        collections.contains(laptop);
+        return null;
+    }
+
+    public boolean deleteLaptop(Laptop laptop){
+        collections.delete(laptop);
+        return false;
     }
 
     
