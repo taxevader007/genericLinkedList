@@ -26,7 +26,7 @@ public class LinkList<T> {
         size++;
     }
 
-    //cambiar contains
+    //cambiar conta
     public boolean contains(T data){
         if(first == null){
             return false;
